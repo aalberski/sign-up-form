@@ -1,0 +1,201 @@
+@font-face{
+    font-family: "norse-bold";
+    src: url("fonts/Norse-Bold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: "inter";
+    src:
+        url("fonts/Inter-VariableFont_opsz\,wght.ttf"), format('ttf'),
+        url("fonts/Inter-Italic-VariableFont_opsz\,wght.ttf"), format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+
+}
+
+body{   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'inter';
+}
+
+/* Card */
+.card-container{
+    background-image: url("https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    width: 35%;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: row;
+    height: 15%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.6);
+    position: relative;
+    top: 25%;
+}
+
+.card-logo{
+    height: 80%;
+    width: auto;
+}
+
+.card-text{
+    color: white;
+    font-family: 'norse-bold';
+    font-size: 100px;
+}
+
+.card-footer{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.9;
+}
+
+.footer-link:link, .footer-link:visited{
+    text-decoration: underline;
+    color: white;
+}
+
+/* Login Form */
+.form-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 65%;
+    background-color: #f9fafc;
+    
+}
+
+.form-top, .form-entry, .form-bottom{
+    padding-left: 75px;
+}
+
+.form-top{
+    height: 40%;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.form-top > p{
+    position: relative;
+    top: 200px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.form-entry{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+}
+
+.form-bottom{
+    height: 30%;
+    border: none;
+}
+
+label{
+    font-weight:bold;
+    color: #444;
+    font-size: 14px;
+}
+
+/* Input */
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px 40px;
+    width: 50%;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 20px); 
+}
+
+input{
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: large;
+    height: 40px;
+    width: 300px;
+}
+
+input:valid{
+    border-color: #E5E7EB;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+input:focus{
+    border-color: blue;
+    box-shadow: 0 2px 4px gray;
+    outline: none;
+}
+
+
+/* Create Account */
+.form-bottom > button{
+    background-color: #596D48;
+    color: white;
+    border: none;
+    height: 60px;
+    width: 240px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    top: 40px;
+    box-shadow: 0 4px 8px gray;
+}
+
+.form-bottom > button:hover{
+    font-size: 20px;
+}
+
+.form-bottom > p{
+    position: relative;
+    top: 75px;
+    font-weight: bold;
+    color: gray;
+}
+
+#logIn:link, #logIn:visited{
+    color: #596D48;
+    text-decoration: none;
+}
+
+#logIn:focus, #logIn:hover{
+    text-decoration: underline;
+}

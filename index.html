@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="card-body">
+            <img class="card-logo" src="images/odin-lined.png">
+            <h1 class="card-text">ODIN</h1>
+        </div>
+        <footer class="card-footer">Photo by <a class="footer-link" href="https://google.com">Halie West</a> on <a class="footer-link" href="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">Unsplash</a></footer>
+    </div>
+    <form class ="form-container" action="test.html" method="post">
+        <div class="form-top">
+            <p>
+                This is not a real online service! You know you need something <br>like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.
+
+                <br><br>You <em>know</em> you want to.
+            </p>
+        </div>
+        <fieldset class="form-entry">
+            <h2>Let's do this!</h2>
+            <div class="inputs">
+                <div class="input-group">
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" id="firstName" name="userFirstName">
+                </div>
+                <div class="input-group">
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" id="lastName" name="userLastName">
+                </div>
+                <div class="input-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="userEmail">
+                </div>
+                <div class="input-group">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="text" id="phone" name="userPhone">
+                </div>
+                <div class="input-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="userPassword" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmPassword" name="userConfirmPassword" required>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="form-bottom">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a id ="logIn" href="test.html">Log in</a></p>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
